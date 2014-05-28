@@ -1,0 +1,111 @@
+﻿html,
+body {
+  height: 100%;
+  font: normal 1em Century Gothic, san-serif;
+  color: #222;
+}
+
+/* Layout Element Colors
+================================ */
+body  { background-color: #edeff0; }
+.top-side { background-color: #edeff0; }
+.left-side { background-color: rgba(25, 25, 25, .6); }
+
+
+/* Header, Left-Side and Body Layout
+================================ */
+.wrapper,
+.top-side { width: 100%; } 
+.top-side {
+  min-height: 50px;
+  position: fixed;
+  top: 0px;
+  z-index: 4;
+  box-shadow: 0px 1px 10px 0 rgba(25, 25, 25, .6);
+}
+.left-side {
+  width: 15%;
+  height: 100%;
+  position: absolute;
+  left: 0px; 
+  z-index: 5;   
+}
+
+/*HEADER*/
+h2, h3 { font-weight: normal }
+.top-side nav { 
+  display: table; 
+  float: right;
+  padding: 10px;
+}
+.top-side nav > * {
+  display: table-cell;
+  vertical-align: middle;
+}
+.top-side nav img {
+  height: 20px;
+  margin-left: 5px;
+  padding: 5px;
+}
+.search {
+  display: inline-block;
+  width: 50%;
+  margin-left: 16%;
+  padding-top: 5px;  
+}
+.search input {
+  height: 40px;
+  width: 90%;
+  border: 1px solid #DDD;
+  color: white;
+  float: left;
+  font-size: 1.5em;
+}
+.search :nth-child(2) {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: rgb(166,255,106);
+  padding: .49em;
+}
+.search img:hover {
+  cursor: pointer;
+  border: 1px solid white;
+}
+.top-side nav img:hover {
+  background-color: rgb(166,255,106);
+  cursor: pointer;
+}
+
+/*LEFT SIDE*/
+.left-side h2{ 
+  color: rgb(166,255,106);
+  text-align: center;
+  line-height: 0;
+  padding: 5px 0 15px;
+}
+.left-side ul { 
+  list-style-type: none;  
+  padding-left:0;
+}
+.left-side ul li { 
+  padding-left: 1.5em; 
+  line-height: 1.6em;
+  margin-left: 5px;
+  color: white;
+}
+.left-side ul li:nth-child(1) { background: url('../Img/Master/rsz_1home.png') no-repeat 0 -1px; }
+.left-side ul li:nth-child(2) { background: url('../Img/Master/rsz_dashboard.png') no-repeat 0 1px; }
+.left-side ul li:nth-child(3) { background: url('../Img/Master/rsz_progress.png') no-repeat 0 1px; }
+.left-side ul li:nth-child(4) { background: url('../Img/Master/rsz_tools.png') no-repeat 0 2px; }
+
+.left-side ul li:hover {
+  cursor: pointer;
+  background-color: rgba(25, 25, 25, .4);
+  
+}
+.body-side {
+  width: 85%;
+  height: 100%;
+  float: right;
+}
+

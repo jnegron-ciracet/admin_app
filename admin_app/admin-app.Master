@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="admin-app.master.cs" Inherits="admin_app.admin_app" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="Style/Normalize.css" rel="stylesheet" />
+    <link href="Style/Master.css" rel="stylesheet" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+      <div class="wrapper">
+        <header class="top-side">
+          <div class="search">      
+            <input type="text" name="lblSearch"><img src="Img/Master/Search.png">        
+          </div>
+	      <nav>	  
+            <h3> Josue Negron Santiago</h3>
+            <img src="Img/Master/Settings.png">
+          </nav>
+        </header>
+        <section class="left-side">
+          <h2> Admin App </h2>
+          <ul class="main-nav">
+            <li> Home </li>
+            <li> Dashboard </li>
+            <li> Reports </li>
+            <li> Admin Tools </li>
+          </ul>      
+        </section>
+        <section class="body-side">
+          <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+          </asp:ContentPlaceHolder>      
+        </section>
+      </div>          
+    </form>
+</body>
+</html>
